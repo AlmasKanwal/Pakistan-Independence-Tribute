@@ -183,7 +183,7 @@ function setName() {
         function downloadCard() {
             const card = document.getElementById("card");
 
-            window.scrollTo(0, 0);
+            // window.scrollTo(0, 0);
 
             html2canvas(card, { scale: 3, useCORS: true }).then(canvas => {
                 const link = document.createElement("a");
