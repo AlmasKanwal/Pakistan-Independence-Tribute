@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan</title>
+    <!-- Bootstrap CSS Linking -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Linking -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <!-- ================== Navbar Start ================== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-flag"></i> Pakistan Independence
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#heroes">Heroes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quotes">Quotes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                </ul>
+                <a href="#pak-card"><button class="btn btn-generate" onclick="showCardPage()">
+                        <i class="fas fa-id-card me-2"></i>Generate Card
+                    </button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- ================== Navbar End ================== -->
+
+
+    <!-- ================== Hero Section Start ================== -->
+    <section id="home" class="hero">
+        <div class="container-xxl">
+            <div class="pak-hero">
+                <div class="quaid-img">
+                    <img src="./assets/quaid-pic.png" alt="">
+                </div>
+
+                <div class="hero-text">
+                    <h1>Independence Day</h1>
+                    <p>The story of freedom, sacrifice, and the birth of a nation</p>
+                    <div class="date">14th August 1947</div>
+                </div>
+
+                <div class="flag-container">
+                    <div class="flag">
+                        <img class="flag-star" src="./assets/star.png" alt="Star">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ================== Hero Section End ================== -->
+
+
+    <!-- ================== Journey Section Start ================== -->
+    <section id="journey" class="journey-section">
+        <div class="container-xxl">
+            <h2 class="section-title text-center">Journey to Freedom</h2>
+            <p class="text-center lead">The long struggle for independence through key historical moments</p>
+
+            <div class="journey-cards">
+                <!-- 1st Card -->
+                <div class="journey-card">
+                    <div class="journey-image">
+                        <img src="./assets/first-war.jpg" alt="">
+                    </div>
+                    <div class="journey-content">
+                        <div class="journey-year">1857</div>
+                        <h3 class="journey-title">First War of Independence</h3>
+                        <p class="journey-text">
+                            The first organized rebellion against British rule began in 1857. Muslim and Hindu soldiers
+                            united against the East India Company, marking the beginning of the freedom struggle in the
+                            subcontinent.
+                        </p>
+                    </div>
+                </div>
+                <!-- 2nd Card -->
+                <div class="journey-card">
+                    <div class="journey-image">
+                        <img src="./assets/muslim-league.png" alt="">
+                    </div>
+                    <div class="journey-content">
+                        <div class="journey-year">1906</div>
+                        <h3 class="journey-title">All India Muslim League</h3>
+                        <p class="journey-text">
+                            The All India Muslim League was founded on December 30, 1906, in Dhaka. It aimed to
+                            safeguard the political rights of Muslims and later became the leading force behind
+                            Pakistan's creation.
+                        </p>
+                    </div>
+                </div>
+                <!-- 3rd Card -->
+                <div class="journey-card">
+                    <div class="journey-image">
+                        <img src="./assets/iqbal-allahabad.jpg" alt="">
+                    </div>
+                    <div class="journey-content">
+                        <div class="journey-year">1930</div>
+                        <h3 class="journey-title">Allama Iqbal's Address</h3>
+                        <p class="journey-text">
+                            n his presidential address at the Allahabad session of the Muslim League, Allama Iqbal
+                            proposed the idea of a separate homeland for Muslims in north-western India laying the
+                            intellectual foundation for Pakistan.
+                        </p>
+                    </div>
+                </div>
+                <!-- 4th Card -->
+                <div class="journey-card">
+                    <div class="journey-image">
+                        <img src="./assets/pakistan-resolution.jpg" alt="">
+                    </div>
+                    <div class="journey-content">
+                        <div class="journey-year">1940</div>
+                        <h3 class="journey-title">Pakistan Resolution</h3>
+                        <p class="journey-text">
+                            On March 23, 1940, at Minto Park (now Iqbal Park), Lahore, the Muslim League passed the
+                            historic Pakistan Resolution formally demanding independent states for Muslims, which led
+                            directly to the creation of Pakistan.
+                        </p>
+                    </div>
+                </div>
+                <!-- 5th Card -->
+                <div class="journey-card">
+                    <div class="journey-image">
+                        <img src="./assets/pak-independence.jpeg" alt="">
+                    </div>
+                    <div class="journey-content">
+                        <div class="journey-year">1947</div>
+                        <h3 class="journey-title">Independence & Partition</h3>
+                        <p class="journey-text">
+                            On August 14, 1947, Pakistan emerged as an independent nation based on the two-nation
+                            theory. Millions migrated across the new borders, making sacrifices to shape a sovereign
+                            Muslim state.
+                        </p>
+                    </div>
+                </div>
+                <!-- 6th Card -->
+                <div class="journey-card">
+                    <div class="journey-image">
+                        <img src="./assets/pak-nuclear.jpg" alt="">
+                    </div>
+                    <div class="journey-content">
+                        <div class="journey-year">1998</div>
+                        <h3 class="journey-title">Pakistan Goes Nuclear</h3>
+                        <p class="journey-text">
+                            On May 28, 1998, Pakistan successfully conducted five nuclear tests in Chaghi, Balochistan,
+                            in response to India's nuclear tests. This act made Pakistan the 7th nuclear power in the
+                            world and the first in the Muslim world, marking a significant milestone in national defense
+                            and deterrence.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================== Journey Section End ================== -->
+
+
+    <!-- ================== Heroes Section Start ================== -->
+    <section id="heroes" class="leader-section">
+        <div class="container-xxl">
+            <h2 class="section-title text-center" style="color: white;">Our Heroes</h2>
+            <p class="text-center lead">The great personalities who fought for our freedom</p>
+
+            <div class="leader-cards">
+                <!-- 1st Card -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./assets/Quaid-e-Azam.jpeg" alt="">
+                    </div>
+                    <h4 class="hero-name">Quaid-e-Azam Muhammad Ali Jinnah</h4>
+                    <p class="hero-role">
+                        Founder of Pakistan and its first Governor-General. Through his legal expertise and political
+                        vision, he secured a separate homeland for Muslims.
+                    </p>
+                </div>
+                <!-- 2nd Card -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./assets/Alama Iqbal.jpeg" alt="">
+                    </div>
+                    <h4 class="hero-name">Allama Iqbal</h4>
+                    <p class="hero-role">
+                        Poet of the East and philosopher. His poetry and philosophy awakened Muslims and gave them the
+                        vision of a separate homeland.
+                    </p>
+                </div>
+                <!-- 3rd Card -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./assets/fatima.jpeg" alt="">
+                    </div>
+                    <h4 class="hero-name">Fatima Jinnah</h4>
+                    <p class="hero-role">
+                        Mother of the Nation and sister of Quaid-e-Azam. She worked tirelessly for women's education and
+                        political participation.
+                    </p>
+                </div>
+                <!-- 4th Card -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./assets/Liaquat.jpeg" alt="">
+                    </div>
+                    <h4 class="hero-name">Liaquat Ali Khan</h4>
+                    <p class="hero-role">
+                        First Prime Minister of Pakistan and close companion of Quaid-e-Azam. He strengthened the
+                        foundations of the new nation.
+                    </p>
+                </div>
+                <!-- 5th Card -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./assets/sir-syed.jpeg" alt="">
+                    </div>
+                    <h4 class="hero-name">Sir Syed Ahmad Khan</h4>
+                    <p class="hero-role">
+                        Pioneer of modern education among Muslims. He founded Aligarh University and encouraged Muslims
+                        towards modern education.
+                    </p>
+                    </p>
+                </div>
+                <!-- 6th Card -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="./assets/dr-qadeer.jpeg" alt="">
+                    </div>
+                    <h4 class="hero-name">Dr. Abdul Qadeer Khan</h4>
+                    <p class="hero-role">
+                        Known as the father of Pakistan's nuclear program. His scientific leadership made Pakistan a
+                        nuclear power, ensuring strong national defense and global recognition.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ================== Heroes Section End ================== -->
+
+
+    <!-- ================== Quotes Section Start ================== -->
+    <section id="quotes" class="quotes-section">
+        <div class="container-xxl">
+            <h2 class="section-title text-center">Inspiring Quotes</h2>
+            <p class="text-center lead">Inspirational words from our great leaders</p>
+
+            <div class="quote-cards">
+                <!-- 1st Card -->
+                <div class="quote-card">
+                    <p class="quote-text">
+                        Work, work and work. Discipline and faith are the keys to our success.
+                    </p>
+                    <div class="quote-author">Quaid-e-Azam</div>
+                </div>
+                <!-- 2nd Card -->
+                <div class="quote-card">
+                    <p class="quote-text">
+                        Nations are born in the hearts of poets, they prosper and die in the hands of politicians.
+                    </p>
+                    <div class="quote-author">Allama Iqbal</div>
+                </div>
+                <!-- 3rd Card -->
+                <div class="quote-card">
+                    <p class="quote-text">
+                        You are free; you are free to go to your temples, you are free to go to your mosques or to any
+                        other place of worship.
+                    </p>
+                    <div class="quote-author">Quaid-e-Azam</div>
+                </div>
+                <!-- 4th Card -->
+                <div class="quote-card">
+                    <p class="quote-text">
+                        Rise above sectional interests and private ambitions. Pass from matter to spirit. Matter is
+                        diversity; spirit is light, life and unity.
+                    </p>
+                    <div class="quote-author">Allama Iqbal</div>
+                </div>
+                <!-- 5th Card -->
+                <div class="quote-card">
+                    <p class="quote-text">
+                        Pakistan is not going to be a theocratic state to be ruled by priests with a divine mission.
+                    </p>
+                    <div class="quote-author">Quaid-e-Azam</div>
+                </div>
+                <!-- 6th Card -->
+                <div class="quote-card">
+                    <p class="quote-text">
+                        The ultimate aim of education is to enable individuals to become capable of doing new things,
+                        not simply repeating what other generations have done.
+                    </p>
+                    <div class="quote-author">Sir Syed Ahmad Khan</div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ================== Quotes Section End ================== -->
+
+
+    <!-- ================== Quiz Section Start ================== -->
+    <section id="quiz" class="quiz-section">
+        <div class="container-xxl">
+            <h2 class="section-title text-center" style="color: white;">Test Your Knowledge</h2>
+            <p class="text-center lead">How well do you know Pakistan's independence history?</p>
+
+            <div class="quiz-container">
+                <div id="quizContent">
+                    <div class="quiz-question" id="question"></div>
+                    <div class="quiz-options" id="options"></div>
+                    <button class="quiz-button" onclick="nextQuestion()" id="nextBtn" style="display: none;">Next
+                        Question</button>
+                    <button class="quiz-button" onclick="showResults()" id="resultsBtn" style="display: none;">Show
+                        Results</button>
+                </div>
+                <div id="quizResults" class="quiz-result" style="display: none;">
+                    <h3 id="scoreText"></h3>
+                    <p id="scoreMessage"></p>
+                    <div id="allAnswers"></div>
+                    <button class="quiz-button" onclick="restartQuiz()" style="margin-top: 20px;">Take Quiz
+                        Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================== Quiz Section End ================== -->
+
+
+    <!-- =========== Generate Independance Day Card Start =========== -->
+    <section id="pak-card" class="pakCard-sec">
+        <div class="container-xxl">
+            <h2 class="section-title text-center">Create Your Independence Day Card</h2>
+            <p class="text-center lead">Celebrate 14th August by sending a personalized message to your loved ones!</p>
+
+            <div class="card-wrapper" id="card">
+                <div class="flag-container">
+                    <div class="flag">
+                        <img class="flag-star" src="./assets/star.png" alt="Star">
+                    </div>
+                </div>
+
+                <h1>Happy Independence Day!</h1>
+                <p class="name">Dear <span id="recipientName">Pakistan</span>,</p>
+                <p class="message">Wishing you joy, peace, and prosperity on this special day. May the spirit of freedom
+                    and sacrifice always shine bright in our hearts.</p>
+
+                <div class="quote">
+                    <p>“With faith, discipline and selfless devotion to duty, there is nothing worthwhile that you
+                        cannot
+                        achieve.”</p>
+                    <span>– Quaid-e-Azam Muhammad Ali Jinnah</span>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="nameInput" placeholder="Enter Name" />
+                <button onclick="setName()">Update Name</button>
+                <button onclick="downloadCard()">Download Card</button>
+            </div>
+        </div>
+    </section>
+    <!-- =========== Generate Independance Day Card End =========== -->
+
+
+    <!-- ================== Footer Start ================== -->
+    <footer class="footer-section">
+        <div class="container-xxl">
+            <h4>Pakistan Zindabad</h4>
+            <p>Tribute to all martyrs in memory of independence</p>
+            <p>Remembering the sacrifices that made our freedom possible</p>
+            <p>© 2024 Pakistan Independence Day - Created with <i class="fa-solid fa-heart"></i> for Pakistan</p>
+            <p style="font-size: 0.9rem; opacity: 0.7;">"With faith, discipline and selfless devotion to duty, there is
+                nothing worthwhile that you cannot achieve." - Quaid-e-Azam</p>
+        </div>
+    </footer>
+    <!-- ================== Footer End ================== -->
+
+
+    <!-- Bootstrap JS Linking -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- HTML 2 Canvas Linking for Images Download -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <!-- JavaScript External File Linking -->
+    <script src="./index.js"></script>
+
+</body>
+</html>

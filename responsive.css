@@ -1,0 +1,124 @@
+/* ================== Navbar Start ================== */
+@media only screen and (max-width: 991px) {
+    .nav-link {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 316px) {
+    .fa-flag {
+        display: none;
+    }
+}
+
+/* ================== Navbar End ================== */
+
+
+/* ================== Hero Section Start ================== */
+@media only screen and (max-width: 991px) {
+    .pak-hero {
+        flex-wrap: wrap;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .quaid-img,
+    .flag-container {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .quaid-img {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* ================== Hero Section End ================== */
+
+
+/* ================== Journey Section Start ================== */
+@media only screen and (max-width: 450px) {
+    .journey-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .journey-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .journey-image {
+        height: 200px;
+    }
+}
+/* ================== Journey Section End ================== */
+
+
+/* ================== Heroes Section Start ================== */
+@media only screen and (max-width: 450px) {
+    .leader-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .leader-section {
+        padding: 60px 0;
+    }
+}
+/* ================== Heroes Section End ================== */
+
+
+/* ================== Quotes Section Start ================== */
+@media only screen and (max-width: 630px) {
+    .quote-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .quotes-section{
+        padding: 60px 0;
+    }
+}
+/* ================== Quotes Section End ================== */
+
+
+/* ================== Quiz Section Start ================== */
+@media only screen and (max-width: 595px){
+    .quiz-container{
+        padding: 10px;
+    }
+
+    .quiz-question {
+    text-align: left;
+}
+}
+/* ================== Quiz Section End ================== */
+
+
+/* ================== Footer Start ================== */
+@media only screen and (max-width: 375px){
+    .pakCard-sec .flag-container{
+        width: 100%;
+    }
+}
+/* ================== Footer End ==================  */
