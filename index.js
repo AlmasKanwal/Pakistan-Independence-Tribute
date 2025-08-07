@@ -175,21 +175,54 @@ window.onload = loadQuestion;
 
 
 // Generate Independance Day Card Start
-function setName() {
-            const name = document.getElementById("nameInput").value.trim();
-            document.getElementById("recipientName").textContent = name || "Pakistan";
-        }
+// function setName() {
+//   const name = document.getElementById("nameInput").value.trim();
+//   document.getElementById("recipientName").textContent = name || "Pakistan";
+// }
 
-        function downloadCard() {
-            const card = document.getElementById("card");
+// function downloadCard() {
+//   const card = document.getElementById("card");
 
-            // window.scrollTo(0, 0);
+//   // window.scrollTo(0, 0);
 
-            html2canvas(card, { scale: 3, useCORS: true }).then(canvas => {
-                const link = document.createElement("a");
-                link.download = "IndependenceDayCard.png";
-                link.href = canvas.toDataURL("image/png");
-                link.click();
-            });
-        }
+//   html2canvas(card, { scale: 3, useCORS: true }).then(canvas => {
+//     const link = document.createElement("a");
+//     link.download = "IndependenceDayCard.png";
+//     link.href = canvas.toDataURL("image/png");
+//     link.click();
+//   });
+// }
 // Generate Independance Day Card End
+
+
+function setName() {
+  const name = document.getElementById("nameInput").value.trim();
+  document.getElementById("recipientName").textContent = name || "Pakistan";
+}
+
+function downloadCard() {
+  const card = document.getElementById("card");
+
+  // card.scrollIntoView({ behavior: "smooth", block: "center" });
+
+  html2canvas(card, {
+    scale: window.devicePixelRatio > 2 ? 2 : window.devicePixelRatio, 
+    useCORS: true, 
+    backgroundColor: null, 
+    logging: false, 
+    width: card.offsetWidth, 
+    height: card.offsetHeight 
+  }).then(canvas => {
+
+    canvas.toBlob(blob => {
+      const link = document.createElement("a");
+      link.download = "IndependenceDayCard.png";
+      link.href = URL.createObjectURL(blob);
+      link.click();
+      URL.revokeObjectURL(link.href); 
+    }, "image/png");
+  }).catch(error => {
+    console.error("Error generating canvas:", error);
+    alert("Failed to download card. Please try again or use a desktop device.");
+  });
+}
