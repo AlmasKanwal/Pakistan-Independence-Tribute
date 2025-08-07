@@ -175,26 +175,6 @@ window.onload = loadQuestion;
 
 
 // Generate Independance Day Card Start
-// function setName() {
-//   const name = document.getElementById("nameInput").value.trim();
-//   document.getElementById("recipientName").textContent = name || "Pakistan";
-// }
-
-// function downloadCard() {
-//   const card = document.getElementById("card");
-
-//   // window.scrollTo(0, 0);
-
-//   html2canvas(card, { scale: 3, useCORS: true }).then(canvas => {
-//     const link = document.createElement("a");
-//     link.download = "IndependenceDayCard.png";
-//     link.href = canvas.toDataURL("image/png");
-//     link.click();
-//   });
-// }
-// Generate Independance Day Card End
-
-
 function setName() {
   const name = document.getElementById("nameInput").value.trim();
   document.getElementById("recipientName").textContent = name || "Pakistan";
@@ -202,8 +182,6 @@ function setName() {
 
 function downloadCard() {
   const card = document.getElementById("card");
-
-  // card.scrollIntoView({ behavior: "smooth", block: "center" });
 
   html2canvas(card, {
     scale: window.devicePixelRatio > 2 ? 2 : window.devicePixelRatio, 
@@ -226,3 +204,4 @@ function downloadCard() {
     alert("Failed to download card. Please try again or use a desktop device.");
   });
 }
+// Generate Independance Day Card End
