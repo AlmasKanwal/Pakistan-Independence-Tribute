@@ -3,6 +3,11 @@
     .nav-link {
         margin: 0;
     }
+
+    .btn-generate{
+        margin-top: 10px;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -72,6 +77,7 @@
         height: 200px;
     }
 }
+
 /* ================== Journey Section End ================== */
 
 
@@ -86,6 +92,7 @@
         padding: 60px 0;
     }
 }
+
 /* ================== Heroes Section End ================== */
 
 
@@ -95,30 +102,33 @@
         grid-template-columns: 1fr;
     }
 
-    .quotes-section{
+    .quotes-section {
         padding: 60px 0;
     }
 }
+
 /* ================== Quotes Section End ================== */
 
 
 /* ================== Quiz Section Start ================== */
-@media only screen and (max-width: 595px){
-    .quiz-container{
+@media only screen and (max-width: 595px) {
+    .quiz-container {
         padding: 10px;
     }
 
     .quiz-question {
-    text-align: left;
+        text-align: left;
+    }
 }
-}
+
 /* ================== Quiz Section End ================== */
 
 
 /* =========== Generate Independance Day Card Start =========== */
-@media only screen and (max-width: 375px){
-    .pakCard-sec .flag-container{
+@media only screen and (max-width: 375px) {
+    .pakCard-sec .flag-container {
         width: 100%;
     }
 }
+
 /* =========== Generate Independance Day Card End ===========  */
